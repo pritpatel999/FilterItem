@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Filter Items</title>
+    <link rel="stylesheet" href="filterItem.css">
+    <link rel="stylesheet" href="G:prit/css/font-awesome.css">
+</head>
+<body>
+
+        <!-- header-->
+        <header>
+            <!--navbar-->
+            <nav class="navbar navbar-expand">
+               <div class="wraping">
+                <a href="#" class="navbar-brand logo"><img src="img/ps24.jpg" alt="" style="height:80px; width:80px; border-radius:50%;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+                    <span class="toggler-icon"><i class="fa fa-bars"></i></span>
+                </button>
+                </div>
+                
+                <div class="wraping">
+                    <ul class="navbar-nav text-capitalize">
+                        <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item active"><a href="#store" class="nav-link">Store</a></li>
+                    </ul>
+                    </div>
+                        <!--single info-->
+                        <div class="nav-info align-items-center justify-content-between wraping">
+                            <span class="info-icon"><i class="fa fa-phone"></i><div class='number'>+ 123 456 789</div></span>
+                            
+                        </div>
+                        <!--end of single info-->
+
+                        <!--single info-->
+                        <div id="cart-info" class="nav-info align-item-center cart-info justify-content-between wraping">
+                            <span class="cart-info_icon"><i class="fa fa-shopping-cart"></i><span id="item-count">2</span>item - $<span class="item-total">10.49</span>                        </span>
+                        </div>
+                        <!--end of the single info-->
+            </nav>
+            <!-- end of nav -->
+            <!-- banner -->
+            
+            <div class="banner">
+                <div class="words">
+                    <div class="img-container">welcome to <span id='grandmas'>grandma's</span></div>
+                <div id="explore">
+                <a href="#" class="explore">Explore</a>
+                </div>
+            </div>
+                <div class="container-trace">
+                    <div class="item">
+                        <div class="item-1 aaa">
+                            item - <span class="item-1-money">4 $</span>
+                           <a href="#"> <i class="fa fa-trash"></i></a>
+                        </div>
+                            <div class="item-2 aaa">
+                                item - <span class="item-2-money">6.43 $</span>
+                                <a href="#"><i class="fa fa-trash"></i></a>
+                            </div>
+                            <div class="total aaa" style="color:red;">total = <strong id="total">10.99 $</strong>
+                            </div>
+                            
+                            <div class="cart-buttons-container">
+                                <a href="" id="clear-cart" class="btn btn-black">Clear cart</a>
+                                <a href="" class="btn btn-pink">checkout</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <!-- ------------- ABOUT SECTION -------------------------->
+        <header class="about-us" id="about">
+            <div id="about-us">
+                <div class="name"><div class="underline">About <span id="us">Us</span></div>
+                    <p class="info">Lorem ipsum dolor sit,fadsfdsf dfds fwe r wer amet consectetur adipisicing elit. Ratione, laborum accusamus? Aliquid?</p>
+               
+                <a href="#" class="aboutBtn">Explore</a>
+            </div>
+            <div class="about-img">
+               <div class="border">
+                   <img src="img/ps22.jpg" alt="" style="height:300px;width:400px;" class="about-img2">
+                </div>
+            </div>
+            </div>
+        </header>
+<!---------------- END OF THE ABOUT SECTION----------------------->
+
+
+<!--STORE IREMS-->
+<section id="store" class="store">
+    <div class="container">
+        <!-- SECTION TITLE -->
+        <div class="row">
+            <div class="text-center">
+                <h1 class="text-capitalize">our <strong class="baner-title">Store</strong></h1>
+            </div>
+        </div>
+        <!-- END OF THE SECTION TITLE -->
+
+        <!-- FILTER BUTTONS -->
+        <div class="row">
+            <div class="sortBtn">
+                <a href="#" class="btn-store btn-black filter-btn" data-filter="all">All</a>
+                <a href="#" class="btn-store btn-black filter-btn" data-filter="cakes">cakes</a>
+                <a href="#" class="btn-store btn-black filter-btn" data-filter="cupcakes">cupcakes</a>
+                <a href="#" class="btn-store btn-black filter-btn" data-filter="sweets">sweets</a>
+                <a href="#" class="btn-store btn-black filter-btn" data-filter="doughnuts">doughnuts</a>
+            </div>
+        </div>
+        <!-- SEARCH BOX -->
+        <div class="row">
+            <div class="serch-str">
+                <form>
+                    <div class="input-group">
+                        
+                            <span class="input-group-text search-box" id='search-icon'><i class="fa fa-search"></i></span>
+                        
+                        <input type="text" class="form-control" id="search-item" placeholder="Search Here..">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- END OF THE SEARCH BOX -->
+        <!-- END OF THE FILTER BUTTONS -->
+
+
+        <!-- SROTE ITEMS -->
+        <div class="row" id="store-items">
+            <!-- single item -->
+            <div class="store-item cupcakes" data-item="cupcakes">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="img/ps13.jpg" style="width:300px; height:300px;" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon"><i class="fa fa-shopping-cart"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text text-capitalize">
+                            <h5 id="store-item-name">cupcake item</h5>
+                            <h5 class="store-item-value">$<strong id="store-item-price">5</strong></h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of cart -->
+            </div>
+            <!-- end of the single store item -->
+
+
+            <!-- single item -->
+            <div class="store-item sweets" data-item="sweets">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="img/ps14.jpg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon"><i class="fa fa-shopping-cart"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text text-capitalize">
+                            <h5 id="store-item-name">sweet item</h5>
+                            <h5 class="store-item-value">$<strong id="store-item-price">15</strong></h5>
+                        </div>
+                    </div>
+                </div>
+            <!-- end of cart -->
+            </div>
+            <!-- end of the single store item -->
+
+                    
+            <!-- single item -->
+            <div class="store-item cakes" data-item="cakes">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="img/ps15.jpg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon"><i class="fa fa-shopping-cart"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text text-capitalize">
+                            <h5 id="store-item-name">cake item</h5>
+                            <h5 class="store-item-value">$<strong id="store-item-price">10</strong></h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of cart -->
+            </div>
+            <!-- end of the single store item -->
+
+
+            <!-- single item -->
+            <div class="store-item cakes" data-item="cakes">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="img/ps16.jpg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon"><i class="fa fa-shopping-cart"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text text-capitalize">
+                            <h5 id="store-item-name">cake item</h5>
+                            <h5 class="store-item-value">$<strong id="store-item-price">7</strong></h5>
+                        </div>
+                    </div>
+                </div>
+            <!-- end of cart -->
+            </div>
+            <!-- end of the single store item -->
+
+                    
+            <!-- single item -->
+            <div class="store-item doughnuts" data-item="doughnuts">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="img/ps17.jpg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon"><i class="fa fa-shopping-cart"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text text-capitalize">
+                            <h5 id="store-item-name">doughnut item</h5>
+                            <h5 class="store-item-value">$<strong id="store-item-price">5</strong></h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of cart -->
+            </div>
+            <!-- end of the single store item -->
+
+
+            <!-- single item -->
+            <div class="store-item doughnuts" data-item="doughnuts">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="img/ps18.jpg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon"><i class="fa fa-shopping-cart"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text text-capitalize">
+                            <h5 id="store-item-name">doughnuts item</h5>
+                            <h5 class="store-item-value">$<strong id="store-item-price">12</strong></h5>
+                        </div>
+                     </div>
+                </div>
+            <!-- end of cart -->
+            </div>
+            <!-- end of the single store item -->
+
+                    
+            <!-- single item -->
+            <div class="store-item cupcakes" data-item="cupcakes">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="img/ps19.jpg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon"><i class="fa fa-shopping-cart"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text text-capitalize">
+                            <h5 id="store-item-name">cupcake item</h5>
+                            <h5 class="store-item-value">$<strong id="store-item-price">15</strong></h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of cart -->
+            </div>
+            <!-- end of the single store item -->
+
+
+            <!-- single item -->
+            <div class="store-item cupcakes" data-item="cupcakes">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="img/ps20.jpg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon"><i class="fa fa-shopping-cart"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text text-capitalize">
+                            <h5 id="store-item-name">cupcake item</h5>
+                            <h5 class="store-item-value">$<strong id="store-item-price">2</strong></h5>
+                        </div>
+                    </div>
+            </div>
+            <!-- end of cart -->
+            </div>
+            <!-- end of the single store item -->
+
+                    
+            <!-- single item -->
+            <div class="store-item cakes" data-item="cakes">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="img/ps21.jpg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon"><i class="fa fa-shopping-cart"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text text-capitalize">
+                            <h5 id="store-item-name">cake item</h5>
+                            <h5 class="store-item-value">$<strong id="store-item-price">35</strong></h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of cart -->
+            </div>
+            <!-- end of the single store item -->
+
+
+            <!-- single item -->
+            <div class="store-item sweets" data-item="sweets">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="img/ps22.jpg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon"><i class="fa fa-shopping-cart"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text text-capitalize">
+                            <h5 id="store-item-name">sweet item</h5>
+                            <h5 class="store-item-value">$<strong id="store-item-price">8</strong></h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of cart -->
+            </div>
+            <!-- end of the single store item -->
+
+                    
+            <!-- single item -->
+            <div class="store-item sweets" data-item="sweets">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="img/ps23.jpg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon"><i class="fa fa-shopping-cart"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text text-capitalize">
+                            <h5 id="store-item-name">sweet item</h5>
+                            <h5 class="store-item-value">$<strong id="store-item-price">11</strong></h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of cart -->
+            </div>
+            <!-- end of the single store item -->
+
+
+            <!-- single item -->
+            <div class="store-item doughnuts" data-item="doughnuts">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="img/ps24.jpg" class="card-img-top store-img" alt="">
+                        <span class="store-item-icon"><i class="fa fa-shopping-cart"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text text-capitalize">
+                            <h5 id="store-item-name">doughnut item</h5>
+                            <h5 class="store-item-value">$<strong id="store-item-price">9</strong></h5>
+                        </div>
+                    </div>
+                </div>
+            <!-- end of cart -->
+            </div>
+            <!-- end of the single store item -->
+        </div>
+    </div>
+</section>
+    <!-- END OF THE STORE ITEMS -->
+
+
+
+    <!-- MODEL CONTAINER -->
+    <div class="container-fluid">
+        <div class="row lightbox-container">
+            <div class="lightbox-holder">
+                <div class="lightbox-item">
+                <span class="lightbox-close"><i class="fa fa-window-close"></i></span>
+            
+                <div class="lightbox-control">
+            <span class="container-btn btnLeft"><i class="fa fa-caret-left"></i></span>
+            <span class="container-btn btnRight"><i class="fa fa-caret-right"></i></span>
+       </div>   
+        </div>
+        </div>
+    </div>
+
+
+
+    <script src="filterItem.js"></script>
+</body>
+</html>
